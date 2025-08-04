@@ -4,14 +4,15 @@ pipeline {
     stages {
         stage('Install pytest') {
             steps {
-                sh 'pip3 install pytest'
+                bat 'pip install pytest'
             }
         }
         stage('Run Test') {
             steps {
                 echo 'Testing...'
-                sh 'pytest test_calc.py'
+                bat 'pytest test_calc.py'
             }
         }
     }
 }
+
