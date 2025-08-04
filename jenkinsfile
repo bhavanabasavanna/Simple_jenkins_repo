@@ -13,11 +13,6 @@ pipeline {
                 sh 'pytest test_calc.py'
             }
         }
-        stage('Build') {
-            steps {
-                echo 'Building...'
-                sh 'echo Build complete'
-            }
-        }
     }
+
 }
